@@ -39,7 +39,7 @@ int main(void) {
   }
 }
 float mc_pi(int a){
-    int count=0;
+    float count=0.0,k;
     for(int i=0;i<a;i++){
         float x=frandom();
         float y=frandom();
@@ -48,7 +48,8 @@ float mc_pi(int a){
             count++;
         }
     }
-    return 4*count/a;
+    k= 4*count/a;
+  return k;
 }
 
 
